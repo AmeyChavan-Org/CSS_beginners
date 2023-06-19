@@ -1,0 +1,7 @@
+p#external{
+	color: blue; background: yellow;
+}
+
+p.ext2{
+	color: yellow; background: red;
+}
