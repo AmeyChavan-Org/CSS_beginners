@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>tut24(CSS display property)</title>
+
+	<style>
+
+
+
+		img{
+			width: 34px 34px;
+/*			If you try to take it to center by changing margin , then it will not work coz header cha att ahe te ani header block element (even jari img inline element ahe tari)			*/
+			display: block;
+/*display block kela ni te je inline element ahe te block elment zala			*/
+			margin: autp;
+
+		}
+
+
+		header{
+/*jasa mi bolo header block element ahe so , margin deun te center la nhi yeu sakat 			*/
+/*so apan "width" use karto ithe block element sathi , tycha through center la gheta yeta*/
+			margin: auto;
+			border: 2px solid black;
+			width: 729px;
+		}
+
+		h2{
+			font-family: cursive;
+			margin: 0px;
+			text-align: center;
+		}
+
+		.box{
+			border: 4px solid black;
+			background-color: grey;
+			margin: 4px;
+			padding: 23px;
+/*	total width rhate maintain including margin and padding(box-sizing ni)		*/
+			box-sizing: border-box;
+			display: inline-block;
+		}
+/*this will create problem*/
+		/*#third{
+
+			display: block;
+			width: 30px;
+		}
+
+		#second{
+			display: inline-block;
+			width: 30px;
+		
+		}*/
+
+		.container{
+			margin: auto;
+
+
+		}
+
+
+		*{
+			box-sizing: border-box;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<header class="top">
+		<img src="digital-art-men-city-futuristic-night-hd-wallpaper-thumb.jpg">
+		<h2>welcome to my blog</h2>
+
+		<div class="container">
+			<div class="box">
+				<h4 class="header"> THIS IS HEADING-1</h4>
+				<p>ATA HAI SAMAJLA COMMENTS WACHUN KI BLOCK ELEMENT LA CENTER KASA KARYCHA </p>
+			</div>
+
+
+			<div class="box">
+				<h4 class="header"> THIS IS HEADING-2</h4>
+				<p>TASACH ATA BAGHU APAN KI INLINE LA KASA CENTER KARYCHA, MAHANJE WIDTH LA KASA MANUPULATE KARYCHA </p>
+			</div>
+
+
+			<div class="box" id="third">
+				<h4 class="header"> THIS IS HEADING-2</h4>
+				<p>TYCHA SATHI EK SPECIAL inline-block.......................... </p>
+			</div>
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS box model</title>
+		<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+/*  "*" IT IS THE UNIVERSAL SELECTOR ,USE TO KEEP BY-DEFAULT SETTING IF NOTHIG IS DECLARE */
+
+
+			.contianer{
+				background-color: pink;
+				border: 3px solid rgb(64, 9, 127);
+
+
+/*				 padding is takes element inside or we can say increase distance between border and element*/				
+				padding: 9px;
+/*				we can set paddinig for left right ,bottom and top
+				padding-top: 9px;
+				padding-left: 9px;
+				padding-right: 9px;
+				padding-bottom: 9px;
+				*/
+
+				padding: 23px 20px 6px 78px; /**specific padding fro top right bottom left; this is same for margin*/
+
+/*				also can be done by*/
+/*				padding: 34px 19px;  [padding for top/bottom left/right]*/
+
+
+				margin: 15px 80px;
+/*				display from the other div and side of contianer*/
+					border-radius: 28px;
+					width: 500px;
+						box-sizing: border-box;
+/*						without box sixing if we changethe padding then the width will change(even if you have given a widht) , but if you apply box sizing then the width will not change(try with and without box sizing)*/
+			}
+
+
+			body{
+				background-color: greenyellow;
+			}
+
+		</style>
+</head>
+
+<body>
+	<div class="img">
+		<img  src="Screenshot (335).png">
+	</div>
+	<div class="contianer">
+	<h1>CSS box model)</h1>
+	<p id="first">THIS IS THE TEST CASE FOR TRIAL</p>
+	</div>
+
+	<div class="contianer">
+	<h1>CSS box model)</h1>
+	<p id="second">THIS IS THE TEST CASE FOR TRIAL</p>
+	</div>
+
+	<div class="contianer">
+	<h1>CSS box model)</h1>
+	<p id="third">THIS IS THE TEST CASE FOR TRIAL</p>
+	</div>
+
+	<div class="contianer">
+	<h1>CSS box model)</h1>
+	<p id="forth">THIS IS THE TEST CASE FOR TRIAL</p>
+	</div>
+	<div class="contianer">
+	<p>EVERYTHING WHICH IS DONE IN PADDING CAN BE DONE IN MARGIN (try out yourself)</p>
+		</div>
+</body>
+</html>

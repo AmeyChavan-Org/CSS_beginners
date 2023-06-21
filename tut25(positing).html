@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>tut25(positing)</title>
+	<style>
+
+		.container{
+			border: 2px solid black;
+			background-color: lightgray;
+			height: 3000px;
+		}
+
+
+		.box{
+/*	ata hai box eka khali ek ahe... so display inline-block karu apn		*/
+			display: inline-block;/*ata te side by side yetil*/
+			border: 2px solid black;
+			width: 200px;
+			height: 200px;
+			margin: 2px;
+		}
+
+/* ATA apan baghu what are the position properties		*/
+/*types are- static(by-defualt), absolute , relative fixed and sticky*/
+		#box3{
+/*	relative to apni normal positon , wo idhar udhar hil sakta hai using top bottom left right		*/
+			position: relative;
+			top: 14px;
+			left: 14px;
+/*yechat kay hota adhi jithe toh box hota tithe gap yeil ata....jr gap nako asel tr absolute use karycha !			*/
+		}
+
+		#box1{
+			position: absolute;
+/*ATA HAI TOP ANI LEFT HAI, MAIN JO CONTAINER AHE TYCHA RELATED NI CHANGES KAREL, (main container pasun 100px sodel) 			*/
+			top: 100px;
+			left: 100px;
+		}
+
+
+		#box2{
+/*position to the browser winsow will be fixed*/
+			position: fixed;
+			right: 4px;
+		}
+/*sticky will make it stick to that position ...slightly different from fixed....*/
+		#box4{
+			position: sticky;
+			top: 3px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+	<div class="box" id=box1>
+		1
+	</div>
+
+	<div class="box" id=box2>
+		2.position: fixed;<br>
+			right: 4px;<p>ata hai jari web-page scroll kela tari hai fix rahil ithe</p>
+			<p>yecha application mhanje apan chatting madhe karu sakto</p>
+	</div>
+
+	<div class="box" id=box3>
+		3
+	</div>
+
+	<div class="box" id=box4>
+		4.position:sticky<br>
+		<p>
+			this is usefull for application developing 
+		</p>
+	</div>
+
+</div>
+</body>
+</html>

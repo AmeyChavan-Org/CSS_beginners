@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pseudo selectors and more desiging</title>
+	<style>
+		.container{
+			border: 2px solid green;
+			background-color: lightblue;
+			padding: 34px;
+			margin: 34px auto;
+			width: 666px;
+
+
+			}
+
+		.btn{
+				background-color: lightsalmon;	
+				padding: 6px;
+				margin: 6px;
+				border: none;
+/*jasa click here vr mouse nehela tr finger yeto, tasach cursor: pointer; kela ki finger yeto*/
+				cursor: pointer;
+				font-size: 16px;
+				border-radius: 10px;
+				font-family: sans-serif;
+		}
+
+/*	TEXT DECORATION PROPERTES HAS FOLLOWS	*/
+			a{
+				text-decoration: none;
+/*	a href la edit kartoy (click here chi underline remove zali)			*/
+
+				}
+/*hover means jevha apn mouse tycha(click here) vr gheun jau thevha kay hoil*/
+			a:hover{
+				color: black;
+/*jevha tu btn bgcolor comment karshil thvha hai work karel , nhi tr overlape hotya ata so work nhi karat				*/
+				background-color: pink;
+			}
+
+/*visited mhanje ekda ki ty link vr click kela , ty nantr ti link kashi disli pahijel			*/
+	
+			a:visited{
+				color: green;
+
+			}
+/*jevha link daabun thevto apn thevha*/
+			a:active{
+				background-color: yellow;
+			}
+/*THIS are the pseudo selector , hai apan btn la pn laun sakto ha!			*/
+
+	</style>
+</head>
+<body>
+	
+	<div class="container" id="cont1">
+		<h2>THIS IS MY HEADING</h2>
+		<p>Pseudo selectors and more desiging </p>
+		<a href="https://www.primevideo.com/" class="btn" >CLICK HERE TO OPEN PRIME VIDEO</a>
+		<!-- button tag to add button -->
+		<button class="btn">click here</button>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>tut21(alignment)</title>
+			<!-- Adding webbase font			 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+	
+	<style>
+
+*{
+		box-sizing: border-box;
+}
+
+		body{
+			background: lightblue;
+			font-family:'Josefin Sans', sans-serif;;
+		}
+		.container{
+			width: 900px;
+			border: 3px solid red;
+			margin: auto ;
+/*			margin auto will set it in center automatically by calculating it*/
+			background: lightcyan;
+			}
+
+
+		.item{
+				border: 2px solid black;
+				margin: 12px 2px;
+				padding: 12px 3px;
+				background: lightpink;
+
+		}
+
+
+/*	NEW THINGS		*/
+		#fruit{
+			float: left;
+			width: 425px;
+/*if you are using float when giving width is complusary otherwise it will not works */
+		}
+
+		#computer{
+			float: left;
+			width: 425px;
+
+		}
+
+		#books{
+		
+			clear: left;
+			width: 425px;
+/*We use clear for not to overlape 2/3 boxes on eachother (fruit and computer should not overlape books)*/
+
+/*if floar is left then clear should also be left (rigth likha toh kuch nhi hoga ani both(for right & left floats))		*/
+		}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
+/*TEXT EDITING*/
+
+p,h1{
+/*THIS IS SIMILAR LIKE THE MS WORDS LEFT/RIGHT alignment of word*/
+	/*text-align: left;*/
+	text-align: right;
+	/*text-align: center;
+	text-align: justify;*/
+
+}
+	</style>
+}
+</head>
+<body>
+	<div class="container">
+		<h3>THIS IS TUT21(CAREFULLY READ COMMENTS IN SOURCE CODE)</h3>
+		<div id="fruit" class="item">
+			<h2>fruits</h2>
+			<p id="fruitpara" class="para"> The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent</p>
+		</div>
+
+		<div id="computer" class="item">
+			<h2>computer</h2>
+			<p id="fruitpara" class="para">The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent</p>
+		</div>
+
+		<div id="books" class="item">
+			<h2>books</h2>
+			<p id="fruitpara" class="para">CLEAR: LEFT; /RIGHT/BOTH; lihi ki kontapn float left/right/both element overlape nhi karnr , jy element madhe clear lihila ahe tyla</p>
+		</div>
+
+	</div>
+</body>
+</html> 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>NAVIGATION</title>
+	<style>
+		.navbar{
+			background-color: palevioletred;
+			border-radius: 30px;
+		}
+
+		.navbar ul{
+			/*jevha apan float : left kela tr background color remove zala coz float parent la overfloat karta na mhanun			*/
+			overflow: auto;
+		}
+
+		.navbar li{
+
+			float: left;
+			/*WHEN you do this eka line madhe yetat but , black dots overlape karat ,so remove karu apan tyla			*/
+			list-style: none;
+			padding: 3px 3px;
+			margin: 13px 20px;
+		}
+
+/*Ata anchor a tag laun apan "li cha ata" home about services madhe		*/
+	
+		.navbar li a{
+/*	under remover karun coz te changla nhi vatat		*/
+			text-decoration: none;
+			color: black;
+
+		}
+
+
+		a:hover{
+			background-color: lightpink;
+
+		}
+
+
+		.SEARCH{
+			float: right;
+			color: white;
+			padding: 12px 75px;
+
+			}
+
+		.navbar input{
+
+			border: 2px solid black;
+			border-radius: 15px;
+			padding: 2px 3px;
+			margin: 3px;
+			width: 200px;
+
+		}
+	</style>
+
+
+</head>
+<body>
+	<header>
+		<nav class="navbar" >
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">CONTACT US</a></li>
+				
+				<div class="SEARCH" >
+					<input type="text" name="SEARCH" id="SEARCH" placeholder="search here">
+				
+			</div>
+			</ul>
+
+
+		</nav>
+	</header>
+</body>
+</html>
