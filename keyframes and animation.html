@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>keyframes and animation </title>
+	<style>
+		.container{
+			background-color: hotpink;
+		}
+
+		.box{
+			background-color: lightpink;
+			width: 150px;
+			height: 150px;
+			position: relative;
+			animation-name: amey1;
+			animation-name: amey2;
+/*animation cha name kahi pn theu sakto so amey1 thevla			*/
+			animation-duration: 2s;
+/*animation kiti time chalya cha ahe			*/
+			animation-iteration-count: 2;
+/*animation kiti time repeat karycha ahe			*/
+			animation-fill-mode: forwards;
+/*			jr forwards thevla tr keyframe madhe to chi ji state ahe, last la ty state madhe rahil, ani jr alternative thevla tr "from cha state madhe"*/
+
+			animation-timing-function: ease-in-out;                                      
+/*			timing of entire animation ease-in(start slow ,end fast)*/
+/*ease-out is visversa and ease-in-out (start slow ,mid fast and end slow)*/
+			animation-delay: 4s;
+/*			4s nantr animation chalu hoil*/
+			animation-direction: reverse;
+/*			animation cha flow reverse madhe hoil*/
+		}
+
+/*@keyframe animation_name and kuthun ke kut paryt*/
+@keyframes amey1{
+
+	from{	
+		width: 150px;
+
+	}
+
+	to{
+		width: 450px;
+	}
+
+}
+
+
+/*another way to keyframe animation-*/
+
+@keyframes amey2{
+/*	asa imagine kar animation cha duration  0 to 100 madhe ahe */
+	0%{
+/*initially kasa disel */
+	top: 0px;
+	left: 0px;
+	}
+
+	25%{
+/*animation 25% complete zalya nantr kasa disel */
+	top: 250px;
+	left: 0px;
+	}
+
+	50%{
+/*animation 50% complete zalya nantr kasa disel */
+	top: 250px;
+	left: 250px;
+	}
+
+	100%{
+		top: 0px;
+		left: 250px;
+
+	}
+
+}
+/*					ata hai sagala tu eka line madhe lihu sakto - short hand ahe */
+
+	animation: animation-name animation-duration  animation-timing-function animation-delay animation-iteration-count animation-fill-mode
+
+	animation: amey1 2s ease-in-out 1s 12 backwardŚ
+	</style>
+</head>
+<body>
+
+	<div class="container" >
+	</div>
+
+	<div class="box">
+		THIS IS A BOX
+	</div>
+</body>
+</html>

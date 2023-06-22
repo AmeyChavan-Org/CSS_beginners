@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS grid(tut39)</title>
+	<!-- css grid is slighty different from flex-box -->
+	<!-- css grid created kinda 2D grid to align items properly . who can say in other way it create jagged Array of elemnts -->
+	<style>
+		.container{
+			border: 2px solid black;
+			display: grid;
+/*			grid has properties has follow*/
+/*			grid-template-columns: 300px 100px 100px;*/
+/*			it will create 3 layout columns: ;*/
+
+
+/*			grid-template-colusmns: 300px 100px auto;*/
+
+/*			another easy way*/
+/*			grid-template-columns: 1fr 4fr 1fr;*/
+/*			1part; 2col will be 4 times of 1 ; and last is same as first*/
+/*			it will basically divide the container into ratio of 1:4:1
+;*/
+
+			grid-template-columns: repeat(10, auto);
+/*			make 10 col repeat auto*/
+				grid-gap: 2rem;
+/*				its like padding ,gives between two items*/
+		}
+
+		.item{
+/*			height: 100px;
+			width: 100px;*/
+			background: lightblue;
+			margin: 15px;
+			border-radius: 5px;
+			border: 2px solid black;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- jevha apan div grid kela thevha ...apla container GRID banla ek prakarcha -->
+	<div class="container">
+		<div class="item">
+			THIS IS ITEM
+		</div>
+
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+					<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+		<div class="item">
+			THIS IS ITEM
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Transform</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+
+
+		.container{
+			height: 80vh;
+			display: flex;
+			justify-content: center;/*box la madhe anya sathi(manjhe container cha ata jo box ahe tyla center la ana asa!)*/
+			align-items: center;
+			background-color: pink;
+		}
+
+		.box{
+			background-color: gray;
+			border: 2px solid black;
+			height: 400px;
+			width: 400px;
+			border-radius: 4px;
+			justify-content: center;/*box cha contain la madhe anya sathi(manjhe box cha ata ji string ahe tyla center la ana asa!)*/
+			align-items: center;
+			display: flex;
+/*			string center la ali!*/
+			transition: all 1s ease-in ;
+		}
+
+		.box:hover{
+/*			transform: at a time ek tranform work hoto;*/
+/*			transform: ; properties*//*			transform: rotate(360deg);--> rotate hoto*/
+/*			transform: skew(10deg);-->trika hota*/
+/*			transform: scale(2);--> size ni hotha hoto*/
+/*			transform: translateX(100px); */
+/*this is use to move the object related to xy co-ordinate*/
+			/*transform: translateY(10px);*/
+			transform: translate(100px,100px);			
+		}
+			</style>
+</head>
+<body>
+	<div class="container">
+		note : transiton and  transform , both are different different terms .okay!, it is used for create animation in your website.
+		<div class="box">
+			THIS IS A BOX
+		</div>
+
+	</div>
+
+</body>
+</html>

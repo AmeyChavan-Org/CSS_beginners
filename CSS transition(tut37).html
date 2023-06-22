@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Transition</title>
+	<style>
+/*		to make box highlinght we will make background-color dark*/
+			body{
+				background-color: black;
+			}
+
+
+		#box{
+			display: flex;
+			justify-content: center;
+
+/*			to center contain innside the box we use align-items: ;*/
+/*			and align-content: is use for spacing centering*/
+			align-items: center;
+			background-color: lightpink;
+			height: 200px;
+			width: 200px;
+/*			transition: ; this is something same like animation tag which we learn*/
+			
+			transition-property: background-color;/* mention karycha kutla property vr aplya karycha ahe transition  */
+
+/*			ata je transition: ; lavla ahe tyla apan manipulate karu sakto (in-short ajun details)*/
+/*			NOTE:sagala tranisition che tag , animation cha tag sarkhe ahet so no need to memories;*/
+			transition-duration: 1s;
+			transition-timing-function: ease-in-out;/*start and end la slow and madhe fast transition*/
+			transition-delay: 1s;/*kiti time nantr transition zala pahijel */
+
+
+/*			short hand transition-property: ;*/
+/*			transition: backgroun-color 1s ease-in 3s;* (all 4 property in one line (one-linear's))*/
+			--------------------------------------------------------------------------------------------
+/*			note jr sagale property la trasitiion lavycha asel tr */
+			transition:all 2s ease-in .3s;		/*NOTE:0-run nhi jo paryt trasition-property;bg-color comment nhi karat*/
+/*			asa nasta kela transition-property: width ani height ; seperate lihawa lagla asta*/
+		}
+
+/*		for transition-property	apan hai lavla ahe, lightpink to hotpink transition hoil*/
+		#box:hover{
+			background-color: red;
+			height: 400px;
+			width: 400px;
+			border-radius: 50px;
+			
+		}
+	</style>
+</head>
+<body>
+	<h2>THIS IS CSS TRANSITION TUTORIAL</h2>
+	<div class="container" id="box">
+		THIS BOX REPRESENT TRASITION PROPERTY
+	</div>
+<!-- which properties can be done transition ? -->
+<!-- ans:- opacity , color, height ,width,margin,font size etc  -->
+<!-- propeties having contineous properties should be apply in transition , it is not recommended to use binary properties (proper transition nhi hot) -->
+</body>
+</html>
