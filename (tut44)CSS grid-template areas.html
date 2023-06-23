@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>(tut44)CSS grid </title>
+	<style>
+		.container{
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas: 
+/*			jitke nagivation pahijel ahe titke time lihycha*/
+			'navbar navbar navbar navbar'
+			'section section section aside'
+			'footer footer footer footer';
+
+
+		}  
+
+		.item{
+				background-color: lightblue;
+				border: 2px black;
+				padding: 12px 12px;
+		}
+
+		#navbar{
+/*			grid area cha nav apan navbar thevla ....so mg aplya grid-template-areas: ; use karta yeil*/
+			grid-area: navbar;
+		}
+
+		#section{
+			grid-area: section;
+
+		}
+
+		#aside{
+			grid-area: aside;
+
+		}
+
+		footer{
+/*			grid area cha nav footer thevla ahe*/
+			grid-area: footer;
+		}
+	</style>
+
+</head>
+<body>
+<h1>(tut44)CSS grid </h1>
+	<div class="container">
+		<div id="navbar" class="item">
+			HOME ABOUT-US CONTACT-US SERVICES
+		</div>
+		
+		<div id="section" class="item">
+			THIS IS A SECTION CONTAINING ITEMS 
+		</div>
+
+		<div id="aside" class="item">
+			THIS IS ASIDE BAR CONTAINING ITEMS 
+		</div>
+<!-- SO YOU CAN SEE GRID HELP US TO ALIGN AND MAKE THE WEBSITE RESPONSIVE -->
+
+
+		<!-- <div class="item">THIS IS BOX1</div>
+		<div class="item">THIS IS BOX2</div>
+		<div class="item">THIS IS BOX3</div>
+		<div class="item">THIS IS BOX4</div>
+		<div class="item">THIS IS BOX5</div>
+		<div class="item">THIS IS BOX6</div>
+		<div class="item">THIS IS BOX7</div>
+		<div class="item">THIS IS BOX8</div>
+		<div class="item">THIS IS BOX9</div>
+		<div class="item">THIS IS BOX10</div>
+		<div class="item">THIS IS BOX11</div>
+		<div class="item">THIS IS BOX12</div> -->
+
+	</div>
+<!-- NOW WE WILL ADD FOOTER TO THIS WEBSITE -->
+	<footer class="item">
+		THID IS FOOTER
+		</footer>
+
+</body>
+</html>
